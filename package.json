@@ -1,0 +1,28 @@
+{
+  "name": "file-morph",
+  "version": "1.0.0",
+  "description": "A global utilty that allows developers to modify files using regex.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "rm -rf ./dist && tsc -b"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "file-morph": "./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spiresd55/file-morph.git"
+  },
+  "author": "David Spires",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spiresd55/file-morph/issues"
+  },
+  "homepage": "https://github.com/spiresd55/file-morph#readme",
+  "dependencies": {
+    "commander": "^2.19.0",
+    "typescript": "^3.2.4"
+  }
+}
